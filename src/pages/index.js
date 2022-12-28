@@ -1,5 +1,5 @@
-import LandingPage from "./LandingPage";
-import ContactPage from "./ContactPage";
-import AboutPage from "./AboutPage";
+import LandingPage from './LandingPage';
+import ContactPage from './ContactPage';
+import AboutPage from './AboutPage';
 
 export { LandingPage, ContactPage, AboutPage };
