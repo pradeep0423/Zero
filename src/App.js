@@ -1,6 +1,9 @@
-import React from 'react';
-import { Button } from 'semantic-ui-react';
-
+import React from "react";
+import { LandingPage } from "./pages";
 export default function App() {
-  return <Button>Click me</Button>;
-};
+  return (
+    <>
+      <LandingPage />
+    </>
+  );
+}

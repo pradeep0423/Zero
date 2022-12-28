@@ -10,7 +10,7 @@ contains all the intial pages, which will use containers
 
 containers will contain the specific feature components/modules which will have states or connected to redux
 
-containers will use components
+containers will use components by sending the data connected from redux or default states
 
 ## components
 
