@@ -3,6 +3,7 @@ import { Container } from 'semantic-ui-react';
 import { Grid } from 'semantic-ui-react';
 import { ReactComponent as Svg1 } from '../assets/vectors/codinganimate.svg';
 import { ReactComponent as Svg2 } from '../assets/vectors/software-engineer.svg';
+import './LandingPage.scss';
 import 'animate.css';
 
 const LandingPage = (props) => {
@@ -22,9 +23,9 @@ const LandingPage = (props) => {
 
   return (
     <Container>
-      <Grid columns={2} padded="vertically">
+      <Grid columns={2} padded="vertically" className="landingContainer">
         <Grid.Column width={9}></Grid.Column>
-        <Grid.Column width={7}>
+        <Grid.Column width={7} className="vectorContainer">
           {alternate ? (
             <div className="animate__animated animate__fadeIn">
               <Svg1 />
