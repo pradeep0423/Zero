@@ -1,0 +1,34 @@
+.mainCard {
+  margin: 0px 10px !important;
+  width: 260px !important;
+  height: 260px !important;
+  background: #ffffff;
+  box-shadow: 0 0 9px 1px #0000000d, 0 2px 8px #0000000d;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+
+  .cardTop {
+    position: absolute;
+    inset: 0.29% 0% 79.71%;
+    height: 87px !important;
+    background: rgba(0, 0, 0, 0.349258);
+    border-radius: 4px 4px 0 0;
+
+    .imageClass {
+      height: 87px !important;
+    }
+  }
+
+  .cardBody {
+    display: flex;
+    height: 100%;
+    padding-top: 20%;
+    p {
+      margin: auto;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+    }
+  }
+}

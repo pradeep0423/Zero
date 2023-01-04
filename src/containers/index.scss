@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  margin-top: 2.3%;
+}
+
+.ecommerceContainer {
+  height: 80vh;
+
+  .rightSide {
+    padding: 0 2%;
+    .title {
+      font-size: 1.125rem;
+      color: #212121;
+      letter-spacing: 0;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    .description {
+      font-size: 0.875rem;
+      color: #6a6d70;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    .btn-primary {
+      margin-top: 1%;
+      padding: 1% 2%;
+      border: none;
+      background: #007db8;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
