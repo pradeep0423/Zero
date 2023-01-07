@@ -55,11 +55,11 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              TRVL
+              Zero App
               <i class="fab fa-typo3" />
             </Link>
           </div>
-          <small class="website-rights">TRVL © 2020</small>
+          <small class="website-rights">Zero App © 2023</small>
           <div class="social-icons">
             <Link class="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
               <i class="fab fa-facebook-f" />
