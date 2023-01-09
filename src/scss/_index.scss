@@ -1,0 +1,5 @@
+@use './abstracts' as *; // to import file
+
+body {
+  font-size: $font-size;
+}

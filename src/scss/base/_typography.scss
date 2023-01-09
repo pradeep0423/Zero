@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+body {
+  font-family: $text-font;
+  font-weight: $light-weight;
+  //color: $text-primary; //color variable set elsewhere
+  background: $body-bg;
+  -webkit-text-size-adjust: 100%; //fix for iOS
+}
+
+p {
+  font-weight: $normal-weight;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $bold-weight;
+}
+
+h1 {
+  font-size: calculate-rem(14px);
+}
+
+h2,
+h3,
+h4 {
+  font-weight: $normal-weight;
+  font-size: calculate-rem(12px);
+  font-weight: $font-weight-bold;
+}
+
+// Emphasis
+strong,
+b {
+  font-weight: $font-weight-bold;
+}

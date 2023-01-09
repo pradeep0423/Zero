@@ -1,0 +1,115 @@
+@use './colors' as *;
+@use './functions' as *;
+
+/* to make content center */
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-radius($r: 0.25rem) {
+  -webkit-border-radius: $r; /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -moz-border-radius: $r; /* Firefox 1-3.6 */
+  -ms-border-radius: $r; /* IE */
+  -o-border-radius: $r;
+  border-radius: $r; /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+}
+
+// customize scrollbars
+// Beware, this does not work in all browsers
+// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+// @param {Color} $foreground-color - Scrollbar's color
+// @param {Color} $background-color [mix($primary, white, 75%)] - Scrollbar's color
+//   @include scrollbars(.5em, slategray);
+
+@mixin scrollbars(
+  $size: calculate-rem(4px),
+  $foreground-color: $scroll-color,
+  // $background-color: mix($foreground-color, white, 50%)
+  $background-color: transparent
+) {
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  /* Handle */
+  /* addresses the draggable scrolling element that resizes depending on the size of the scrollable element */
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: calculate-rem(4px);
+    &:hover {
+      background-color: $scroll-hover;
+    }
+  }
+
+  /* Track */
+  /* addresses the empty space “below” the progress bar */
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+// For Header
+@mixin large-text {
+  font: {
+    size: calculate-rem(14px);
+    weight: bold;
+  }
+}
+
+@mixin warning {
+  background-color: orange;
+  color: $white;
+}
+
+// to apply morethan one values for box-shadow
+// to call @include box-shadow(1px 0 2px red, 1px 1px 3px $primary-350)
+
+@mixin box-shadow($shadows...) {
+  box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+}
+
+// to apply browser specific example for IE 6
+// to use:
+//  @include apply-to-ie-6 {
+//   body {
+//     font-size: 16px;
+//   }
+//  }
+
+@mixin apply-to-ie-6 {
+  * html {
+    // where * html is hacker for only IE 6
+    @content; // it include all the code specific to IE 6
+  }
+}
+
+//Multiple transitions with scss
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin word-wrap {
+  white-space: nowrap; // CSS word ellipsis ('...') single line
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin strike-through {
+  text-decoration: line-through;
+}
