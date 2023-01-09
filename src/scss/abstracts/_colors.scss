@@ -1,0 +1,101 @@
+$white: #fdfdfd !important;
+$white-2: #fbfbfb !important;
+$black: #000000 !important;
+$rd-bg-color: #101020 !important;
+// $accordion-bg-color: #1a1a1a !important;
+$accordion-bg-color: #2b2e36 !important;
+$body-main-color: #121223 !important;
+$side-panel-bg: #101020 !important;
+$border-color: #302f2f !important;
+$secondary-bg: #21324a !important;
+$selected-color: #427ee4 !important;
+$selected-color-hover: #6094ee !important;
+$scroll-hover: #d9dadb !important;
+$scroll-color: #b5b7ba !important;
+$scroll-focused: #a3a3a4 !important;
+$focused-color: #1753d6 !important;
+$selected-text-bg: #1b2839 !important;
+//Add Analysis colors
+$add-analysis-default: #969cb3;
+$add-analysis-hover: #6094ee;
+$add-analysis-active: #3761be;
+$add-icon-color: $rd-bg-color;
+
+//Remove Analysis colors
+$remove-analysis-default: #969cb3;
+$remove-analysis-hover: #6094ee;
+$remove-analysis-active: #3761be;
+
+// $text-primary: $black;
+$body-bg: #323232 !important;
+
+$measurement-input-bg: #1a1a1a;
+$measurement-input-focus-color: #2a4174;
+$field-bg: #283046;
+
+$btn-findings-bg-color: #048c66;
+$findings-bg-color: #1c304a;
+$findings-header-color: #0dfde0;
+$switch-l-bg: #2ec5c0 !important;
+$switch-p-bg: #3285f2 !important;
+
+$cyan: #00fff0;
+
+/* generate report */
+$generate-report-bg: #2c57a4;
+
+$modified-color: #427ee4;
+
+/* Primary colors */
+$primary: $white;
+$primary-50: #e6f1f3 !important;
+$primary-100: #cee2e8 !important;
+$primary-150: #b7d2dc !important;
+$primary-200: #a2c1d0 !important;
+$primary-250: #7ea1b9 !important;
+$primary-300: #6182a1 !important;
+$primary-350: #4a678a !important;
+$primary-400: #385072 !important;
+$primary-450: #293c5b !important;
+$primary-500: #121b2c !important;
+$primary-550: #121b2c !important;
+$primary-600: #080c14 !important;
+
+/* Secondary colors */
+$secondary: #e6f1ff !important;
+$secondary-50: #d0e4ff !important;
+$secondary-100: #bad7fe !important;
+$secondary-150: #a5cbfd !important;
+$secondary-200: #8fbffd !important;
+$secondary-250: #6aa9fb !important;
+$secondary-300: #4b95f7 !important;
+$secondary-350: #3285f2 !important;
+$secondary-400: #1f76e9 !important;
+$secondary-450: #1166d6 !important;
+$secondary-500: #074eab !important;
+$secondary-550: #022e68 !important;
+$secondary-600: #00142e !important;
+
+/* Tertiary colors */
+$tertiary: $white;
+$tertiary-50: #ebeef2 !important;
+$tertiary-100: #d9dde6 !important;
+$tertiary-150: #c7ccd9 !important;
+$tertiary-200: #b5bbcc !important;
+$tertiary-250: #969cb3 !important;
+$tertiary-300: #7a7f99 !important;
+$tertiary-350: #626580 !important;
+$tertiary-400: #4c4e66 !important;
+$tertiary-450: #38384d !important;
+$tertiary-500: #242533 !important;
+$tertiary-550: #121219 !important;
+$tertiary-600: $black;
+
+/* grey variants */
+$grey-3: #505050;
+$grey-62: #626262;
+$grey-500: #28282b;
+$grey-text: #c8c8c8 !important;
+
+/* error */
+$error: #ff5000;
