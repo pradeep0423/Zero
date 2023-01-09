@@ -1,5 +1,7 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  // background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(90deg, rgb(200 241 212) 0%, rgb(26, 23, 23) 100%);
+  // width: 1500px;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -19,7 +21,9 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #273339;
+  font-weight:900;
+  font-size: 50px;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -27,6 +31,10 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: black;
+  }
 }
 
 .fa-typo3 {
@@ -40,7 +48,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 70vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -59,7 +67,9 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 2px solid rgb(6, 60, 30);
+  // background: rgb(200 241 212);
+  color: black;
   transition: all 0.2s ease-out;
 }
 
