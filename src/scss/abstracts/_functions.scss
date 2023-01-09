@@ -1,0 +1,6 @@
+@use 'sass:math';
+/* function is taking $size as an argument to pass into
+   the calculate-rem function to evaluate into rems */
+@function calculate-rem($size) {
+  @return math.div($size, 14px) * 1rem; // fomantic uses font-size 14px.
+}
