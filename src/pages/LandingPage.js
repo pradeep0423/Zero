@@ -26,25 +26,22 @@ const LandingPage = (props) => {
 
   return (
     <>
-      <>
-        <Container>
-          <Grid columns={2} padded="vertically" className="landingContainer">
-            <Grid.Column width={9}></Grid.Column>
-            <Grid.Column width={7} className="vectorContainer">
-              {alternate ? (
-                <div className="animate__animated animate__fadeIn">
-                  <Svg1 />
-                </div>
-              ) : (
-                <div className="animate__animated animate__fadeInRight">
-                  <Svg2 />
-                </div>
-              )}
-            </Grid.Column>
-          </Grid>
-        </Container>
-        <Footer />
-      </>
+      <Container>
+        <Grid columns={2} padded="vertically" className="landingContainer">
+          <Grid.Column width={9}></Grid.Column>
+          <Grid.Column width={7} className="vectorContainer">
+            {alternate ? (
+              <div className="animate__animated animate__fadeIn">
+                <Svg1 />
+              </div>
+            ) : (
+              <div className="animate__animated animate__fadeInRight">
+                <Svg2 />
+              </div>
+            )}
+          </Grid.Column>
+        </Grid>
+      </Container>
       <Container className="technology" fluid>
         <Container>
           <TechCardContainer />
@@ -55,6 +52,7 @@ const LandingPage = (props) => {
           <EcommerceShowCase />
         </Container>
       </Container>
+      <Footer />
     </>
   );
 };
