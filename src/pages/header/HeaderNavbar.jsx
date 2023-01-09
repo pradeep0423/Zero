@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 // import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import '../../components/Button';
-import { Button } from '../../components/Button';
-import './HeaderNavbar.css';
-
+// import { Button } from '../../components/Button';
+import './HeaderNavbar.scss';
+import { Button, Container, Segment } from 'semantic-ui-react';
 export const HeaderNavbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -28,10 +28,10 @@ export const HeaderNavbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <Container className="navbar" fluid>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            Zero App
+            ATREYA
             <i class="fab fa-typo3" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -60,9 +60,12 @@ export const HeaderNavbar = () => {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          <Button inverted color="olive">
+            Sign Up
+          </Button>
+          {/* {button && <Button buttonStyle="btn--outline">SIGN UP</Button>} */}
         </div>
-      </nav>
+      </Container>
     </>
   );
 };

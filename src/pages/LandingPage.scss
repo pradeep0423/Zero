@@ -1,12 +1,35 @@
 .ui.container {
-  width: 1300px;
+  // width: 1300px;
 }
 .landingContainer {
-  height: 720px;
+  height: 100vh;
 
   .vectorContainer {
     display: block;
     margin: auto;
+  }
+}
+.landingPage {
+  height: 90vh;
+  // background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(90deg, rgb(200 241 212) 0%, rgb(26, 23, 23) 100%);
+  .landing {
+    padding-top: 18;
+    // padding: 1% 8%;
+
+    .alignBannerText {
+      padding-top: 20%;
+    }
+    .taglineText {
+      color: #273339;
+      padding-top: 1%;
+      font-size: 18px;
+    }
+    .bannerTitle {
+      color: #273339;
+      letter-spacing: 1px;
+      font-size: 25px;
+    }
   }
 }
 .technology {
